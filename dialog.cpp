@@ -16,6 +16,10 @@ Dialog::Dialog(QWidget *parent)
     QLabel *label = new QLabel(this);
     label->setText(tr("Miss you!"));
     label->setGeometry(50,30,100,20);
+    QLabel *label1 = new QLabel(this);
+    label1->setText(tr("Miss you too!"));
+    label1->setGeometry(160,30,100,20);
+
 
 
 }
