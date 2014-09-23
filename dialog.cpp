@@ -7,11 +7,12 @@ Dialog::Dialog(QWidget *parent)
 {
     QPushButton *okBtn = new QPushButton(this);
     okBtn->setText(tr("OK"));
-    connect(okBtn,SIGNAL(clicked()),this,SLOT(close()));
+    //connect(okBtn,SIGNAL(clicked()),this,SLOT(close()));
 
     QPushButton *cancelBtn = new QPushButton(this);
     cancelBtn->setText(tr("Cancel"));  
     cancelBtn->setGeometry(50,50,100,20);
+    connect(cancelBtn,SIGNAL(clicked()),this,SLOT(close()));
 
     QPushButton *more = new QPushButton(this);
     more->setText(tr("More"));
