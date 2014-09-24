@@ -10,6 +10,8 @@ class Dialog : public QDialog
 public:
     Dialog(QWidget *parent = 0);
     ~Dialog();
+private slots:
+    void showMessage();
 };
 
 #endif // DIALOG_H
